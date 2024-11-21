@@ -2,8 +2,8 @@ import * as pg from "pg";
 const { Pool } = pg.default;
 import "dotenv/config";
 
-const pool = new Pool({
+const connectionPool = new Pool({
   connectionString: process.env.CONNECTION_STRING,
 });
 
-export { pool };
+export default connectionPool;

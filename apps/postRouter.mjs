@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { pool } from "../utils/db.mjs";
+
 import { validatePostData } from "../middlewares/postValidation.mjs";
 
 const postRouter = Router();
